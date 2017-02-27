@@ -49,8 +49,8 @@
                                     <constraint firstAttribute="height" constant="361" id="g4q-K7-jJK"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6jz-lU-erD">
-                                <rect key="frame" x="65" y="146" width="190" height="290"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6jz-lU-erD">
+                                <rect key="frame" x="65" y="129" width="190" height="325"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NnG-qF-Zmu">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
@@ -91,7 +91,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="owE-vF-zzt">
-                                        <rect key="frame" x="0.0" y="60" width="190" height="50"/>
+                                        <rect key="frame" x="0.0" y="55" width="190" height="50"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cht-0z-rNf">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -129,7 +129,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-AR-hRd">
-                                        <rect key="frame" x="0.0" y="120" width="190" height="50"/>
+                                        <rect key="frame" x="0.0" y="110" width="190" height="50"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmR-b9-Kxg">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -167,7 +167,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WZu-R0-SH5">
-                                        <rect key="frame" x="0.0" y="180" width="190" height="50"/>
+                                        <rect key="frame" x="0.0" y="165" width="190" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hX-rH-bPR">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -205,7 +205,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nTc-er-3sz">
-                                        <rect key="frame" x="0.0" y="240" width="190" height="50"/>
+                                        <rect key="frame" x="0.0" y="220" width="190" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-2b-Xoe">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -238,6 +238,22 @@
                                                 <state key="normal" backgroundImage="equal"/>
                                                 <connections>
                                                     <action selector="onEqualPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1x1-nI-naf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Ko-gy-JSb">
+                                        <rect key="frame" x="0.0" y="275" width="190" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaH-6R-Gox">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="FV5-oG-eHZ"/>
+                                                    <constraint firstAttribute="width" constant="190" id="Ye0-Ds-D3l"/>
+                                                </constraints>
+                                                <state key="normal" image="clear"/>
+                                                <connections>
+                                                    <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrp-Ar-qoV"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -296,6 +312,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>

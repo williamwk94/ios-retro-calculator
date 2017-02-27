@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberPressed(sender: UIButton) {
-//        playSound()
+        playSound()
         
         runningNumber += "\(sender.tag)"
         outputLabel.text = runningNumber
@@ -71,6 +71,17 @@ class ViewController: UIViewController {
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func onClearPressed(_ sender: Any) {
+        playSound()
+        
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        outputLabel.text = "0"
+    }
+    
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
@@ -80,6 +91,8 @@ class ViewController: UIViewController {
     }
     
     func processOperation(operation: Operation) {
+        playSound()
+        
         if currentOperation != Operation.Empty {
             //A user selected an operator, but then selected another operator without first entering a number
             if runningNumber != "" {
